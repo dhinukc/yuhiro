@@ -1,20 +1,24 @@
 <ion-tabs>
+    <ion-tab-bar slot="bottom" style="height: 80px; border-top-left-radius: 20px; border-top-right-radius: 20px; --border: 0px">
+        <ion-tab-button tab="home" class="menu-icon" (click)="onMenuSwitch(1)">
+            <ion-icon [name]="tab1Icon"></ion-icon>
+            <ion-label class="menu-label">Home</ion-label>
+        </ion-tab-button>
 
-  <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="tab1">
-      <ion-icon name="triangle"></ion-icon>
-      <ion-label>Tab 1</ion-label>
-    </ion-tab-button>
+        <ion-tab-button tab="tab2" class="menu-icon" (click)="onMenuSwitch(2)">
+            <ion-icon [name]="tab2Icon"></ion-icon>
+            <ion-label class="menu-label">Search</ion-label>
+        </ion-tab-button>
 
-    <ion-tab-button tab="tab2">
-      <ion-icon name="ellipse"></ion-icon>
-      <ion-label>Tab 2</ion-label>
-    </ion-tab-button>
+        <ion-tab-button tab="tab3" class="menu-icon" (click)="onMenuSwitch(3)">
+            <ion-icon [name]="tab3Icon"></ion-icon>
+            <ion-label class="menu-label">Article</ion-label>
+        </ion-tab-button>
 
-    <ion-tab-button tab="tab3">
-      <ion-icon name="square"></ion-icon>
-      <ion-label>Tab 3</ion-label>
-    </ion-tab-button>
-  </ion-tab-bar>
+        <ion-tab-button tab="tab4" class="menu-icon" (click)="onMenuSwitch(4)">
+            <ion-icon [name]="tab4Icon"></ion-icon>
+            <ion-label class="menu-label">Profile</ion-label>
+        </ion-tab-button>
+    </ion-tab-bar>
 
 </ion-tabs>

@@ -1,0 +1,34 @@
+<app-header></app-header>
+
+<ion-content>
+    <div class="mainContainer">
+        <section class="trendingSection">
+            <section class="titleSection">
+                <label class="tendingSectionTitle">Trendng Workouts</label>
+                <img src="../../../assets/images/fire.png" class="fireIcon">
+            </section>
+            <app-trent-card></app-trent-card>
+        </section>
+
+        <section class="workoutTypeSection">
+            <section class="titleSection">
+                <label class="tendingSectionTitle">Workout Types</label>
+            </section>
+            <div class="slider">
+                <div *ngFor="let card of workoutTypes">
+                    <app-workout-type-card [card]="card"></app-workout-type-card>
+                </div>
+            </div>
+        </section>
+
+        <section class="adiitionalTrainingSection">
+            <section class="titleSection">
+                <label class="tendingSectionTitle">Additional Training</label>
+            </section>
+            <div *ngFor="let data of additionalTrainings">
+                <app-additional-training [data]="data"></app-additional-training>
+            </div>
+        </section>
+    </div>
+
+</ion-content>
